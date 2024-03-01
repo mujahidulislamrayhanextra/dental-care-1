@@ -1,0 +1,31 @@
+.login-section{
+  margin-top: 150px;
+
+}
+.login-box{
+ width: 60%;
+ height: auto;
+border-radius: 10px;
+ margin: 0 auto;
+ padding: 20px;
+}
+.login-item{
+
+}
+.login-item h1{
+ text-align: center;
+}
+
+.signin-section{
+  margin-top: 150px;
+
+
+}
+.button{
+  margin-top: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.input{
+  margin-top: 15px;
+}

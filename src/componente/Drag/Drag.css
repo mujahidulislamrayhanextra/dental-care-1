@@ -1,0 +1,21 @@
+.draggable-div {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+  }
+  
+  .draggable-div-header {
+
+    cursor: move;
+    z-index: 10;
+    background-color: #ffffff;
+    color: #fff;
+  }
+  
+  .user-cards {
+    position: fixed;
+    top: 40.1%;
+    left: 70%;
+}

@@ -1,0 +1,161 @@
+.service-section{
+
+}
+
+.section-heading{
+    text-align: center;
+  }
+  .service-item{
+    margin-bottom: 20px;
+  }
+  
+  .service-item-banner{
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  .service-item-box{
+    width: 31.3%;
+      height: 550px;
+      border: none;
+      box-shadow: -10px 20px 60px #bebebe, -20px -20px 60px #fff;
+      border-radius: 10px;
+      background-color: #FFFFFF;
+  }
+  
+  .service-inner-item{
+    width: 100%;
+  }
+  
+  .service-inner-item-img{
+    width: 99%;
+    text-align: center;
+    margin: 0 auto;
+  
+  }
+  .service-inner-item-img img{
+    width: 100%;
+    height: 250px;
+  }
+  
+  .service-inner-item-header{
+    color: #FC6D6D;
+  }
+  .service-inner-item-header h2{
+    font-size: 42.3px;
+      font-weight: 600;
+  }
+  .service-inner-item-header span{
+    color: #1a1919;
+    font-size: 23.6px;
+    font-weight: 600;
+  }
+  
+  .service-inner-item-text{
+  
+  }
+  .service-inner-item-text p{
+    font-size: 100%;
+    font-weight: 400;
+  }
+  
+  .service-inner-item-btn{
+    
+  }
+  .service-inner-item-btn button{
+    background-color: #FC6D6D;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    font-size: 17.1px;
+    border-radius: 10px;
+  }
+
+
+
+   {/* <div className='col-3 service-item-box'>
+                <div className='service-inner-item'>
+                    <div className='service-inner-item-img'>
+                       <img src="https://media.istockphoto.com/vectors/toothache-caries-severe-pain-in-the-teeth-vector-illustration-in-vector-id1150217294?k=20&m=1150217294&s=612x612&w=0&h=7vw2ZVl9ShfEtbNXzlcYHnqz9Ipq1adeJ159UDwKp_E=" alt="" />
+                    </div>
+                    <div className='service-inner-item-header'>
+                       <h2>Halitosis</h2>
+                       <span>Fees : $20</span>
+                    </div>
+                    <div className='service-inner-item-text'>
+                      <p>Halitosis is an oral health problem where the main symptom is bad smelling breath. In most cases, finding the cause of the bad breath is the first step toward treating this preventable condition.</p>
+                    </div>
+                    <div className='service-inner-item-btn'>
+                      <button onClick={handleServiceNavigte}>Book Now</button>
+                    </div>
+                </div>
+              </div>
+              <div className='col-3 service-item-box'>
+                <div className='service-inner-item'>
+                    <div className='service-inner-item-img'>
+                       <img src="https://t4.ftcdn.net/jpg/04/91/77/63/360_F_491776352_QHPSZWj9zKzwJFQQdokuRyId4hZJkKNf.jpg" alt="" />
+                    </div>
+                    <div className='service-inner-item-header'>
+                       <h2>Halitosis</h2>
+                       <span>Fees : $20</span>
+                    </div>
+                    <div className='service-inner-item-text'>
+                      <p>Halitosis is an oral health problem where the main symptom is bad smelling breath. In most cases, finding the cause of the bad breath is the first step toward treating this preventable condition.</p>
+                    </div>
+                    <div className='service-inner-item-btn'>
+                      <button>Book Now</button>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div className='row d-flex container justify-content-evenly service-item-banner'>
+              <div className='col-3 service-item-box'>
+                <div className='service-inner-item'>
+                    <div className='service-inner-item-img'>
+                       <img src="https://i.ibb.co/8KKpL0f/unhappy-crying-little-sad-girl-hand-face-pain-hurt-caries-teeth-hurt-teeth-girl-caries-119855261.jpg" alt="" />
+                    </div>
+                    <div className='service-inner-item-header'>
+                       <h2>Halitosis</h2>
+                       <span>Fees : $20</span>
+                    </div>
+                    <div className='service-inner-item-text'>
+                      <p>Halitosis is an oral health problem where the main symptom is bad smelling breath. In most cases, finding the cause of the bad breath is the first step toward treating this preventable condition.</p>
+                    </div>
+                    <div className='service-inner-item-btn'>
+                      <button>Book Now</button>
+                    </div>
+                </div>
+              </div>
+              <div className='col-3 service-item-box'>
+                <div className='service-inner-item'>
+                    <div className='service-inner-item-img'>
+                       <img src="https://media.istockphoto.com/vectors/woman-having-painful-toothache-character-in-flat-design-dental-and-vector-id1327568122?b=1&k=20&m=1327568122&s=170667a&w=0&h=OFe4biyJvZccv6LDuSIihvAHzGmVKuuGYc5bOgq-Ls4=" alt="" />
+                    </div>
+                    <div className='service-inner-item-header'>
+                       <h2>Halitosis</h2>
+                       <span>Fees : $20</span>
+                    </div>
+                    <div className='service-inner-item-text'>
+                      <p>Halitosis is an oral health problem where the main symptom is bad smelling breath. In most cases, finding the cause of the bad breath is the first step toward treating this preventable condition.</p>
+                    </div>
+                    <div className='service-inner-item-btn'>
+                      <button >Book Now</button>
+                    </div>
+                </div>
+              </div>
+              <div className='col-3 service-item-box'>
+                <div className='service-inner-item'>
+                    <div className='service-inner-item-img'>
+                       <img src="https://st2.depositphotos.com/1642684/42099/v/380/depositphotos_420993496-stock-illustration-poses-expressions-funny-boy.jpg?forcejpeg=true" alt="" />
+                    </div>
+                    <div className='service-inner-item-header'>
+                       <h2>Halitosis</h2>
+                       <span>Fees : $20</span>
+                    </div>
+                    <div className='service-inner-item-text'>
+                      <p>Halitosis is an oral health problem where the main symptom is bad smelling breath. In most cases, finding the cause of the bad breath is the first step toward treating this preventable condition.</p>
+                    </div>
+                    <div className='service-inner-item-btn'>
+                      <button>Book Now</button>
+                    </div>
+                </div>
+              </div> */}

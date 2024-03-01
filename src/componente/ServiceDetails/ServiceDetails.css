@@ -1,0 +1,70 @@
+.details {
+    display: flex;
+    margin: 120px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: -10px 20px 60px #bebebe, -20px -20px 60px #fff;
+}
+.booking-section {
+    width: 40%;
+
+    text-align: center;
+}
+
+
+.booking-img{
+   width: 50%;
+   margin: 0 auto;
+}
+.booking-img img{
+  width: 100%;
+}
+
+.booking-header{
+   
+}
+.booking-header h1{
+
+}
+.booking-fees{
+  
+}
+.booking-fees h1 {
+    font-size: 25px;
+}
+.booking-para{
+   width: 100%;
+}
+.booking-para p{
+
+}
+.booking-from {
+    width: 40%;
+    margin-left: 10%;
+    height: 380px;
+    background: rgba(185,244,247,.187);
+    border-radius: 10px;
+    text-align: left;
+}
+.booking-from p{
+    margin-bottom: 10px;
+}
+.booking-from input{
+    border: none;
+    width: 80%;
+    border-radius: 10px;
+    height: 35px;
+    background: #ededed;
+    margin-bottom: 10px;
+}
+
+.from{
+    margin: 30px 0 0 25px;
+}
+.submit-btn{
+    
+}
