@@ -70,7 +70,35 @@
     border-radius: 10px;
   }
 
+  @media only screen and (min-width: 992px) {
+    .service-inner-item-header h2 {
+      font-size: 236%;
+      font-weight: 600;
+  }
+  }
+  @media only screen and (min-width: 768px) {
+    .service-inner-item-header h2 {
+      font-size: 180.5%;
+      font-weight: 600;
+  }
 
+
+  .service-inner-item-header span {
+    color: #1a1919;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.service-inner-item-text p {
+  font-size: 88%;
+  font-weight: 400;
+}
+
+
+.service-inner-item-btn {
+margin-top: 23.6%;
+}
+  }
 
    {/* <div className='col-3 service-item-box'>
                 <div className='service-inner-item'>

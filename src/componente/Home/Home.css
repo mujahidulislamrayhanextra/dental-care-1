@@ -254,3 +254,102 @@ body{
     .about-item{
     
     }
+
+    @media(min-width: 992px) {
+      .service-inner-item-header h2 {
+        font-size: 236%;
+        font-weight: 600;
+    }
+    }
+    @media  (min-width: 768px) {
+      .service-inner-item-header h2 {
+        font-size: 180.5%;
+        font-weight: 600;
+    }
+
+
+    .service-inner-item-header span {
+      color: #1a1919;
+      font-size: 100%;
+      font-weight: 600;
+  }
+
+  .service-inner-item-text p {
+    font-size: 88%;
+    font-weight: 400;
+}
+
+
+.service-inner-item-btn {
+  margin-top: 23.6%;
+}
+    }
+
+    @media (min-width: 576px) { 
+
+
+      .service-inner-item-header h2 {
+        font-size: 130%;
+        font-weight: 600;
+    }
+
+
+    .service-inner-item-text p {
+      font-size: 75%;
+      font-weight: 400;
+  }
+
+
+  .service-inner-item-btn {
+    margin-top: 35px;
+}
+
+
+.Link {
+  background-color: #FC6D6D;
+  color: aliceblue;
+  border: none;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+
+.user-cards {
+  position: fixed;
+  top: 40.1%;
+  left: 44%;
+}
+     }
+
+     @media (min-width: 335px) { 
+      .service-inner-item-header h2 {
+        font-size: 73.9%;
+        font-weight: 600;
+    }
+
+
+    .service-inner-item-header span {
+      color: #1a1919;
+      font-size: 86.7%;
+      font-weight: 600;
+  }
+
+  .service-inner-item-text p {
+    font-size: 60%;
+    font-weight: 400;
+}
+.service-inner-item-btn {
+  margin-top: 65px;
+}
+.Link {
+  background-color: #FC6D6D;
+  color: aliceblue;
+  border: none;
+  padding: 10px;
+  font-size: 9.7px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+      }

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Outlet, useParams } from 'react-router-dom';
+import { Outlet, useNavigate, useParams } from 'react-router-dom';
 import { UserContext } from '../../App';
 import services from '../allData/serviceData';
 import { useForm } from 'react-hook-form';
@@ -28,6 +28,27 @@ const ServiceDetails = () => {
       const onSubmit  = (data) => console.log(data)
     
      
+    //   const handleClick = () => {
+    //     // Set clicked to true immediately
+    //     setClicked(true);
+    
+    //     // Execute the function after 3 seconds
+       
+    //   };
+
+const navigate = useNavigate()
+
+      const handleNavigate = () => {
+              
+
+
+
+        setTimeout(() => {
+            // Perform the action after 3 seconds
+            navigate('/home')
+          }, 3000);
+
+      }
 
 
 
@@ -81,7 +102,7 @@ const ServiceDetails = () => {
       
         {errors.exampleRequired && <span className='error'>This field is required</span>}
   
-        <input style={{width:" 52%",
+        <input onClick={() => handleNavigate()} style={{width:" 52%",
     height:' 42px',
     background:' #FC6D6D',
     color: 'white'}} type="submit" />
