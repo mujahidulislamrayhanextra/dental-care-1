@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import './Login.css';
 
@@ -13,6 +13,26 @@ import services from '../allData/serviceData';
  app();
 
 const Login = () => {
+
+  // useEffect(() => {
+  //   const unsubscribe = onAuthStateChanged(auth, (user) => {
+  //       if (user) {
+  //         setUser(user);
+  //         getIdToken(user)
+  //           .then(idToken => {
+  //             setToken(idToken)
+  //         })
+          
+  //       } else {
+  //           setUser({});
+  //       }
+  //       setIsLoading(false);
+  //   });
+  //   return () => unsubscribe;
+  // }, [auth])
+
+
+
 
   const location = useLocation()
 

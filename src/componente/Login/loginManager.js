@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import firebaseConfig from './firebaseConfig';
-import { GoogleAuthProvider, getAuth, signInWithPopup, FacebookAuthProvider, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { useContext } from "react";
+import { GoogleAuthProvider, getAuth, signInWithPopup, FacebookAuthProvider, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, onAuthStateChanged } from "firebase/auth";
+import { useContext, useEffect } from "react";
 import { UserContext } from "../../App";
 
 
@@ -12,6 +12,11 @@ export const app = () => {
 
 const provider = new GoogleAuthProvider();
 const fbProvider = new FacebookAuthProvider();
+
+
+
+
+
 
 export const handleGooglePopupSignIn = (event) => {
     
@@ -176,3 +181,41 @@ export const userSignIn = async ( email,password) => {
       // ...
     });
   }
+
+
+
+  ////// nothjhdf ////
+
+
+
+//   const ServiceDetails = () => {
+    
+//     const [loginInfo,setLoginInfo,users,setUsers,bookingKey,setBookingKey]= useContext(UserContext);
+
+
+//     const auth = getAuth();
+
+// useEffect(() => {
+//   const unsubscribe = onAuthStateChanged(auth, (user) => {
+//       if (user) {
+//        setUsers(user)
+//        setLoginInfo(user)
+        
+//       } else {
+//           setUsers({});
+//           setLoginInfo({})
+//       }
+//       // setIsLoading(false);
+//   });
+//   return () => unsubscribe;
+// }, [auth])
+
+
+//     return (
+        
+//       <> </>
+        
+//     );
+// };
+
+// export default ServiceDetails;

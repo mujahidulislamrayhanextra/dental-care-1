@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 import Home from "../src/componente/Home/Home";
@@ -13,11 +13,18 @@ import ServiceDetails from './componente/ServiceDetails/ServiceDetails';
 import PrivateAuth from './componente/PrivateAuth/PrivateAuth';
 import Drag from './componente/Drag/Drag';
 import Service from './componente/Service/Service';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 
 export const UserContext = createContext();
 
 const App = () => {
+
+ 
+
+
+
+
   const [ loginInfo,setLoginInfo] =  useState({});
   
   const [ users,setUsers] = useState({
@@ -32,10 +39,32 @@ const [ userKey,setUserKey] = useState('');
 
 
 
+    const auth = getAuth();
+
+useEffect(() => {
+  const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const sendToState = {
+          name:user.displayName,
+          email: user.email
+        }
+       setUsers(sendToState)
+       setLoginInfo(sendToState)
+        
+      } else {
+          setUsers({});
+          setLoginInfo({})
+      }
+      // setIsLoading(false);
+  });
+ 
+}, [auth])
+
+
   return ( 
-    <UserContext.Provider value={ [loginInfo,setLoginInfo,users,setUsers,userKey,setUserKey]}>
+    <UserContext.Provider value={ [   loginInfo,setLoginInfo,users,setUsers,userKey,setUserKey]}>
     <BrowserRouter>
-    
+       
     <Header  />
    { loginInfo.email ?  <Drag loginInfo={loginInfo}  >
 

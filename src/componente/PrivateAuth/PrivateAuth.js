@@ -3,7 +3,7 @@ import { Navigate, useLocation,  } from 'react-router-dom';
 import { UserContext } from '../../App';
 
 const PrivateAuth = ({children}) => {
-    const [loginInfo,setLoginInfo] = useContext(UserContext)
+    const [loginInfo,setLoginInfo,users,setUsers,userKey,setUserKey]= useContext(UserContext)
     const location  = useLocation();
    
     return (

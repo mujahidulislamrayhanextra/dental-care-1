@@ -1,12 +1,22 @@
 import React, { useContext, useRef } from 'react';
 import './Drag.css'; // Import CSS for styling
 import { UserContext } from '../../App';
+import { handleLogout } from '../Login/loginManager';
 
 const Drag = () => {
   const myDivRef = useRef(null);
   
-  const [ loginInfo,setLoginInfo]= useContext(UserContext);
+  const [   loginInfo,setLoginInfo,users,setUsers,userKey,setUserKey]= useContext(UserContext);
 
+
+
+  const logOut = () => {
+    handleLogout()
+    .then( res => {
+      setUsers(res)
+      setLoginInfo(res)
+    } )
+  }
 
   const dragElement = (elmnt) => {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -53,7 +63,7 @@ const Drag = () => {
     <div className="card-body">
     <h5 className="card-title">{loginInfo.name}</h5>
     <p className="card-text">{loginInfo.email}</p>
-    <button className="btn btn-danger" onClick={() => setLoginInfo({})}>Logout</button>
+    <button className="btn btn-danger" onClick={() => logOut()}>Logout</button>
   </div>
 
 
