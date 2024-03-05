@@ -1,0 +1,33 @@
+[debug] [2024-03-05T18:25:16.718Z] ----------------------------------------------------------------------
+[debug] [2024-03-05T18:25:16.720Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rayhan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-03-05T18:25:16.720Z] CLI Version:   13.4.0
+[debug] [2024-03-05T18:25:16.720Z] Platform:      win32
+[debug] [2024-03-05T18:25:16.720Z] Node Version:  v20.11.1
+[debug] [2024-03-05T18:25:16.721Z] Time:          Wed Mar 06 2024 00:25:16 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-03-05T18:25:16.721Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-05T18:25:16.831Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-05T18:25:16.832Z] > authorizing via signed-in user (rayhanmd655@gmail.com)
+[debug] [2024-03-05T18:25:16.832Z] [iam] checking project rayhan-dental-care for permissions ["firebase.projects.get"]
+[debug] [2024-03-05T18:25:16.833Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rayhan-dental-care:testIamPermissions [none]
+[debug] [2024-03-05T18:25:16.833Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rayhan-dental-care:testIamPermissions x-goog-quota-user=projects/rayhan-dental-care
+[debug] [2024-03-05T18:25:16.834Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rayhan-dental-care:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-05T18:25:18.171Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rayhan-dental-care:testIamPermissions 200
+[debug] [2024-03-05T18:25:18.171Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rayhan-dental-care:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-05T18:25:18.171Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rayhan-dental-care [none]
+[debug] [2024-03-05T18:25:18.643Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rayhan-dental-care 200
+[debug] [2024-03-05T18:25:18.643Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rayhan-dental-care {"projectId":"rayhan-dental-care","projectNumber":"317716117907","displayName":"rayhan-dental-care","name":"projects/rayhan-dental-care","resources":{"hostingSite":"rayhan-dental-care"},"state":"ACTIVE","etag":"1_1f201dda-b4a1-47fa-a941-155fa104e5ce"}
+[info] 
+[info] === Serving from 'C:\projects\dental-care-1-main'...
+[info] 
+[debug] [2024-03-05T18:25:18.646Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/rayhan-dental-care/sites 
+[debug] [2024-03-05T18:25:19.581Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/rayhan-dental-care/sites 200
+[debug] [2024-03-05T18:25:19.582Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/rayhan-dental-care/sites {"sites":[{"name":"projects/rayhan-dental-care/sites/rayhan-dental-care","defaultUrl":"https://rayhan-dental-care.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-05T18:25:19.583Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rayhan-dental-care/webApps/-/config [none]
+[debug] [2024-03-05T18:25:20.449Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rayhan-dental-care/webApps/-/config 200
+[debug] [2024-03-05T18:25:20.449Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rayhan-dental-care/webApps/-/config {"projectId":"rayhan-dental-care","appId":"1:317716117907:web:0918091e1b7d90e4a55066","storageBucket":"rayhan-dental-care.appspot.com","apiKey":"AIzaSyDfFOE231qvNr0cIVp8UdPlqDP5rbujkiY","authDomain":"rayhan-dental-care.firebaseapp.com","messagingSenderId":"317716117907"}
+[debug] [2024-03-05T18:25:20.465Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rayhan-dental-care [none]
+[debug] [2024-03-05T18:25:20.824Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rayhan-dental-care 200
+[debug] [2024-03-05T18:25:20.825Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rayhan-dental-care {"projectId":"rayhan-dental-care","projectNumber":"317716117907","displayName":"rayhan-dental-care","name":"projects/rayhan-dental-care","resources":{"hostingSite":"rayhan-dental-care"},"state":"ACTIVE","etag":"1_1f201dda-b4a1-47fa-a941-155fa104e5ce"}
+[info] i  hosting[rayhan-dental-care]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[rayhan-dental-care]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}

@@ -21,7 +21,7 @@ const Service = (props) => {
            
       
          
-              <div className='col-3 service-item-box'>
+              <div className='col-3 col-sm-5 col-xs-10 service-item-box'>
                 <div className='service-inner-item'>
                     <div className='service-inner-item-img'>
                        <img src={img} alt="" />

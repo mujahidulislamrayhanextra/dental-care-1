@@ -5,7 +5,7 @@ const Footer = () => {
         <>
              <footer className='footer-section'>
           <div className='footer-item container'>
-              <h1>Ahad Dental Care</h1>
+              <h1>Rayhan Dental Care</h1>
               <span>© Copyright 2024</span>
           </div>
      </footer>

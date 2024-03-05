@@ -11,7 +11,7 @@ const Header = (props) => {
                <div className='container'>
 
                   
-                      <Link to={"/home"} className='navbar-brand  text-light fw-semibold fs-2' >Ahad Dental Care</Link>
+                      <Link to={"/home"} className='navbar-brand  text-light fw-semibold fs-2' >Rayhan Dental Care</Link>
 
                       <button  type='button'  className='toggle navbar-toggler' data-bs-toggle="collapse" data-bs-target='#myNav'>
                        <span className='navbar-toggler-icon '></span>

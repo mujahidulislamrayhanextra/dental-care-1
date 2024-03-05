@@ -181,6 +181,19 @@ body{
     margin-top: 50px;
   }
   
+  .survey-name{
+
+    color:red;
+    font-weight:500;
+    font-size:15px;
+
+  }
+  .survey-score{
+    font-size:50px;
+    font-weight:400;
+  }
+
+
   .machines-section{
   
   }
@@ -255,101 +268,481 @@ body{
     
     }
 
-    @media(min-width: 992px) {
-      .service-inner-item-header h2 {
-        font-size: 236%;
-        font-weight: 600;
-    }
-    }
-    @media  (min-width: 768px) {
-      .service-inner-item-header h2 {
-        font-size: 180.5%;
-        font-weight: 600;
-    }
+    .drag-height-width {
+      width: 22%;
+  }
 
 
-    .service-inner-item-header span {
-      color: #1a1919;
-      font-size: 100%;
+  .card-title{
+
+  }
+  .card-text{
+    
+  }
+
+
+
+
+  /* ServiceDetails CSS */
+
+
+  .details {
+    display: flex;
+    margin: 120px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: -10px 20px 60px #bebebe, -20px -20px 60px #fff;
+}
+.booking-section {
+    width: 40%;
+
+    text-align: center;
+}
+
+
+.booking-img{
+   width: 50%;
+   margin: 0 auto;
+}
+.booking-img img{
+  width: 100%;
+}
+
+.booking-header{
+   
+}
+.booking-header h1{
+
+}
+.booking-fees{
+  
+}
+.booking-fees h1 {
+    font-size: 25px;
+}
+.booking-para{
+   width: 100%;
+}
+.booking-para p{
+
+}
+.booking-from {
+    width: 40%;
+    margin-left: 10%;
+    height: 380px;
+    background: rgba(185,244,247,.187);
+    border-radius: 10px;
+    text-align: left;
+}
+.booking-from p{
+    margin-bottom: 10px;
+}
+.booking-from input{
+    border: none;
+    width: 80%;
+    border-radius: 10px;
+    height: 35px;
+    background: #ededed;
+    margin-bottom: 10px;
+}
+
+.from{
+    margin: 30px 0 0 25px;
+}
+.submit-btn{
+    
+}
+
+
+/* /////////// end ///// */
+
+
+
+
+/* /////// LOGIN CSS /////// */
+
+.login-section{
+  margin-top: 150px;
+
+}
+.login-box{
+ width: 60%;
+ height: auto;
+border-radius: 10px;
+ margin: 0 auto;
+ padding: 20px;
+}
+.login-item{
+
+}
+.login-item h1{
+ text-align: center;
+}
+
+.signin-section{
+  margin-top: 150px;
+
+
+}
+.button{
+  margin-top: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.input{
+  margin-top: 15px;
+}
+
+/* ///// END /////// */
+
+   @media (min-width :992px) and (max-width:1199px){
+    .service-inner-item-header h2 {
+      font-size: 236%;
+      font-weight: 600;
+  }
+  
+  .card-title {
+    font-size: 100%;
+}
+.card-text {
+    font-size: 80%;
+}
+.logOut-btn {
+  width: 50%;
+  font-size: 90%;
+  height: auto;
+}
+   }
+   @media (min-width :768px) and (max-width:991px){
+    .service-inner-item-header h2 {
+      font-size: 178%;
       font-weight: 600;
   }
 
+  .service-inner-item-header span {
+    color: #1a1919;
+    font-size: 100%;
+    font-weight: 600;
+}
+.card-title {
+  font-size: 76%;
+}
+.card-text {
+  font-size: 63%;
+}
+.logOut-btn {
+  width: 50%;
+  font-size: 78%;
+  height: auto;
+}
+
+.service-inner-item-text p {
+  font-size: 78%;
+  font-weight: 400;
+}
+.Link {
+  background-color: #FC6D6D;
+  color: aliceblue;
+  border: none;
+  padding: 10px;
+  font-size: 78%;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.details{
+  width: 90%;
+}
+.booking-section {
+  width: 48%;
+  text-align: center;
+}
+.booking-img {
+  width: 40%;
+  margin: 0 auto;
+}
+.booking-from {
+  width: 48%;
+  margin-left: 0;
+}
+
+
+  .service-inner-item-header h1 {
+    font-size: 100%;
+}
+
+.booking-fees h1 {
+  font-size: 80%;
+}
+.booking-para p {
+  font-size: 80%;
+}
+
+.from {
+  margin: 10px 0 0 10px;
+}
+.booking-from input {
+  border: none;
+  width: 90%;
+  border-radius: 10px;
+  height: 35px;
+  background: #ededed;
+  margin-bottom: 10px;
+  font-size: 80%;
+}
+.login-box {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+   }
+   @media (min-width :576px) and (max-width:767px){
+    .service-inner-item-header h2 {
+      font-size: 127%;
+      font-weight: 600;
+  }
   .service-inner-item-text p {
-    font-size: 88%;
+    font-size: 68%;
     font-weight: 400;
 }
 
-
-.service-inner-item-btn {
-  margin-top: 23.6%;
+.service-item-box {
+  width: 40%;
+  height: 510px;
 }
-    }
+  .service-inner-item-header span {
+    color: #1a1919;
+    font-size: 100%;
+    font-weight: 600;
+}
+.card-title {
+  font-size: 73%;
+}
+.card-text {
+  font-size: 63%;
+}
+.logOut-btn {
+  width: 80%;
+  font-size: 68%;
+  height: auto;
+}
 
-    @media (min-width: 576px) { 
+.service-item-box {
+  width: 40%;
+  height: 510px;}
+.Link {
+  background-color: #FC6D6D;
+  color: aliceblue;
+  border: none;
+  padding: 10px;
+  font-size: 78%;
+  border-radius: 10px;
+  text-decoration: none;
+}
 
+.machines-box-portrait {
+  width: 40%;
+  height: 390px;
+  border-radius: 10px;
+  MARGIN-BOTTOM: 30PX;
+}
+.machines-box-square {
+  width: 40%;
+  height: 260px;
+  border-radius: 10px;
+  margin-bottom: 30PX;
+}
+
+.details{
+  width: 90%;
+}
+.booking-section {
+  width: 48%;
+  text-align: center;
+}
+.booking-img {
+  width: 40%;
+  margin: 0 auto;
+}
+.booking-from {
+  width: 48%;
+  margin-left: 0;
+}
+
+
+  .service-inner-item-header h1 {
+    font-size: 100%;
+}
+
+.booking-fees h1 {
+  font-size: 80%;
+}
+.booking-para p {
+  font-size: 80%;
+}
+
+.from {
+  margin: 10px 0 0 10px;
+}
+.booking-from input {
+  border: none;
+  width: 90%;
+  border-radius: 10px;
+  height: 35px;
+  background: #ededed;
+  margin-bottom: 10px;
+  font-size: 80%;
+}
+
+.login-box {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+   }
+
+
+  @media (max-width:575px){
+   
+
+    .service-item-box {
+      width: 80%;}
 
       .service-inner-item-header h2 {
-        font-size: 130%;
+        font-size: 210%;
         font-weight: 600;
     }
-
-
     .service-inner-item-text p {
-      font-size: 75%;
+      font-size: 91%;
       font-weight: 400;
   }
 
-
-  .service-inner-item-btn {
-    margin-top: 35px;
-}
-
-
-.Link {
-  background-color: #FC6D6D;
-  color: aliceblue;
-  border: none;
-  padding: 10px;
-  font-size: 12px;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-
-.user-cards {
-  position: fixed;
-  top: 40.1%;
-  left: 44%;
-}
-     }
-
-     @media (min-width: 335px) { 
-      .service-inner-item-header h2 {
-        font-size: 73.9%;
-        font-weight: 600;
-    }
-
-
-    .service-inner-item-header span {
-      color: #1a1919;
-      font-size: 86.7%;
-      font-weight: 600;
+  .card-text {
+    font-size: 80%;
   }
+  .card-title {
+    font-size: 90%;
+  }
+  .user-cards {
+    position: fixed;
+    top: 40.1%;
+    left: 20%;
+    width: 45%;
+}
+  .logOut-btn {
+    width: 100%;
+    height: 20px;
+    font-size: 20%;
+    margin: 0;
+    padding: 0;
+}
+.ad-picture img {
+  width: 70%;
+  text-align: center;
+}
+.ad-picture {
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: -10px 20px 60px #bebebe, -20px -20px 60px #fff;
+  width: 18%;
+  height: 79.8px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
 
-  .service-inner-item-text p {
-    font-size: 60%;
-    font-weight: 400;
+
+
+.survey-name {
+  color: red;
+  font-weight: 500;
+  font-size: 90%;
 }
-.service-inner-item-btn {
-  margin-top: 65px;
+
+.survey-score {
+  font-size: 250%;
+  font-weight: 400;
 }
-.Link {
-  background-color: #FC6D6D;
-  color: aliceblue;
-  border: none;
-  padding: 10px;
-  font-size: 9.7px;
+
+
+.machines-box-square {
+  width: 80%;
+  height: 260px;
   border-radius: 10px;
-  text-decoration: none;
+  margin-bottom: 30px;
 }
-      }
+
+.machines-box-portrait {
+  width: 80%;
+  height: 390px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.logOut-btn {
+  width: 50%;
+  height: 20px;
+  font-size: 70%;
+  margin: 0;
+  padding: 0;
+}
+.details{
+  width: 90%;
+}
+.booking-section {
+  width: 48%;
+  text-align: center;
+}
+.booking-img {
+  width: 40%;
+  margin: 0 auto;
+}
+.booking-from {
+  width: 48%;
+  margin-left: 0;
+}
+
+
+  .service-inner-item-header h1 {
+    font-size: 100%;
+}
+
+.booking-fees h1 {
+  font-size: 80%;
+}
+.booking-para p {
+  font-size: 80%;
+}
+
+.from {
+  margin: 10px 0 0 10px;
+}
+.booking-from input {
+  border: none;
+  width: 90%;
+  border-radius: 10px;
+  height: 35px;
+  background: #ededed;
+  margin-bottom: 10px;
+  font-size: 80%;
+}
+.login-box {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
+  }

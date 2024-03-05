@@ -71,24 +71,24 @@ function Home(props) {
     <section className='survey-section'>
         <div className='container'>
            <div className='section-heading'>
-                <h1>In 2022 </h1>
+                <h1>In 2023 </h1>
            </div>
            <div className='row d-flex justify-content-evenly survay-item'>
                  <div className='col-3'>
-                    <span style={{color:"red",fontWeight:"500",fontSize:"15px"}}>veneers</span>
-                    <h2 style={{fontSize:"50px",fontWeight:'400'}}>1250</h2>
+                    <span className='survey-name' >veneers</span>
+                    <h2 className='survey-score' >1250</h2>
                  </div>
                  <div className='col-3'>
-                    <span style={{color:"red",fontWeight:"500",fontSize:"15px"}}>Root Canal</span>
-                    <h2 style={{fontSize:"50px",fontWeight:'400'}}>960</h2>
+                    <span className='survey-name'>Root Canal</span>
+                    <h2  className='survey-score'>960</h2>
                  </div>
                  <div className='col-3'>
-                    <span style={{color:"red",fontWeight:"500",fontSize:"15px"}}>Oparations</span>
-                    <h2 style={{fontSize:"50px",fontWeight:'400'}}>130</h2>
+                    <span className='survey-name'>Oparations</span>
+                    <h2  className='survey-score'>130</h2>
                  </div>
                  <div className='col-3'>
-                    <span style={{color:"red",fontWeight:"500",fontSize:"15px"}}>Patient Visited</span>
-                    <h2 style={{fontSize:"50px",fontWeight:'400'}}>3250</h2>
+                    <span className='survey-name'>Patient Visited</span>
+                    <h2  className='survey-score'>3250</h2>
                  </div>
                 
            </div>
