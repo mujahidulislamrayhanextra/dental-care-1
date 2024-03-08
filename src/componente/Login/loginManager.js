@@ -92,8 +92,7 @@ export const handleGooglePopupSignIn = (event) => {
       .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
-        console.log(user.auth);
-        console.log(user.displayName);
+        
         // const updateName = { ...validInfo};
        const newUserElement = userCredential.user
         newUserElement.success = "User Created Successfully";
@@ -124,7 +123,7 @@ export const userSignIn = async ( email,password) => {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         // Signed in 
         const user = userCredential.user;
-        console.log(user);
+      
         const setSuccess = userCredential.user;
         setSuccess.success = "Login successful";
         setSuccess.name = user.displayName;

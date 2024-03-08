@@ -8,7 +8,7 @@ const Drag = () => {
   const [loginInfo, setLoginInfo, users, setUsers, userKey, setUserKey] = useContext(UserContext);
 
   const logOut = () => {
-    console.log("logout");
+   
     handleLogout().then(res => {
       setUsers(res);
       setLoginInfo(res);

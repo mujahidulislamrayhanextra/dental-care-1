@@ -148,7 +148,7 @@ const logOut = ( ) => {
 
       userSignIn (validInfo.email, validInfo.password)
       .then( res => { 
-        console.log(res.error);
+        
         setUsers(res)
         setLoginInfo(res)
         navigate(from, { replace: true });

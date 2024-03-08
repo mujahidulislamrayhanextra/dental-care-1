@@ -1,9 +1,13 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Outlet, useNavigate, useParams } from 'react-router-dom';
 import { UserContext } from '../../App';
 import services from '../allData/serviceData';
 import { useForm } from 'react-hook-form';
 import './ServiceDetails.css';
+import chackMark from "./check-circle.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleCheck, faCircleXmark, faFaceGrinHearts} from "@fortawesome/free-regular-svg-icons";
+
 
 const ServiceDetails = () => {
     const [ loginInfo,setLoginInfo ,bookingKey,setBookingKey, userKey,setUserKey ]= useContext(UserContext);
@@ -15,7 +19,9 @@ const ServiceDetails = () => {
     const findBooking = services.find ( book => book.key === Booking )
 
 
-  
+    
+
+ 
 
 
 
@@ -28,23 +34,37 @@ const ServiceDetails = () => {
       const onSubmit  = (data) => console.log(data)
     
      
-    //   const handleClick = () => {
-    //     // Set clicked to true immediately
-    //     setClicked(true);
-    
-    //     // Execute the function after 3 seconds
-       
-    //   };
+  
+
+
+    const [showCheckmark, setShowCheckmark] = useState(false);
+   
+  
+    const [showThankYou, setShowThankYou] = useState(false);
+  
+
 
 const navigate = useNavigate()
 
       const handleNavigate = () => {
               
+   
 
+        setShowThankYou(true)
+ 
+      
+
+    
+  
+        
+       
+          setShowCheckmark(true);
 
 
         setTimeout(() => {
             // Perform the action after 3 seconds
+            setShowCheckmark(false);
+            setShowThankYou(false)
             navigate('/home')
           }, 3000);
 
@@ -54,13 +74,50 @@ const navigate = useNavigate()
 
 
     return (
+        <>
+            <div>
+      {showCheckmark && (
+        <div className='redirect-alart'>
+         <div className='chackMark'>
+         <FontAwesomeIcon className='icon' icon={faCircleCheck} />
+         </div>
+         <div className='redirect-text'>
+            <p><strong>You are Redirect to Home</strong></p>
+         </div>
+         <FontAwesomeIcon className='icon1' icon={faCircleXmark} />
+        </div>
         
+
+
+        
+      )}
+    
+    </div>
+
+    <div>
+      { showThankYou && (
+      <div className='progress-bar-body'>
+        <div className='thanks-giving'>
+        <FontAwesomeIcon className='face-icon' icon={faFaceGrinHearts} />
+          <p>Thanks <strong> {loginInfo.name} </strong>fot ordering our <strong> {findBooking.name}</strong> service</p>
+          <FontAwesomeIcon className='face-icon' icon={faFaceGrinHearts} />
+          </div>
+        
+    <div className="progress">
+  <div className="progress-value"></div>
+</div>
+</div>) }
+
+</div>
+
+ 
         <div className='details'>
            <div className='booking-section'>
                 <div className='booking-img'>
                     <img src={findBooking.img} alt="photo" />
 
                 </div>
+               
                 <div className='service-inner-item-header'>
                     <h1>{findBooking.name}</h1>
                 </div>
@@ -95,21 +152,21 @@ const navigate = useNavigate()
      
         <input {...register("exampleRequired", { required: true })} placeholder='Address' />
       
-        {errors.exampleRequired && <span className='error'>This field is required</span>}
+    
         <br />
        <p>Phone:</p>
         <input {...register("exampleRequired", { required: true })} placeholder='Phone Number' />
       
-        {errors.exampleRequired && <span className='error'>This field is required</span>}
+      
   
-        <input onClick={() => handleNavigate()} style={{width:" 52%",
+        <input id="showSuccess" onClick={() => handleNavigate()} style={{width:" 52%",
     height:' 42px',
     background:' #FC6D6D',
     color: 'white'}} type="submit" />
     </form>
     </div>
     </div>
-        
+       </> 
     );
 };
 
